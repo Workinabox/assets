@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workinabox — Visual Identity v0.1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Quicksand:wght@500;600;700&family=Inter+Tight:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================================
+     00 — COVER
+     ============================================================ -->
+<section class="cover" data-screen-label="00 — Cover">
+  <div class="cover-bg"></div>
+  <div class="cover-top">
+    <span>Workinabox &nbsp;/&nbsp; Gos &amp; co ApS</span>
+    <span>Visual identity guidelines · v0.1</span>
+  </div>
+
+  <div class="cover-main">
+    <div style="display: grid; place-items: center; gap: 28px;">
+      <span class="logo-slot cover-logo on-paper" data-logo-slot data-sw="3"></span>
+      <div class="lwm" style="font-family: var(--font-mark); font-weight: 600; font-size: clamp(48px, 7vw, 88px); letter-spacing: -0.03em; line-height: 1;">Workin<span class="a" style="color: var(--orange);">a</span>box</div>
+      <div>
+        <h1 class="cover-title">Companies,<br/>in a box.</h1>
+        <p class="cover-sub">Visual identity for the agentic system that runs the work.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-bottom">
+    <span>workinabox.ai &nbsp;·&nbsp; workinabox.io</span>
+    <span>May 2026</span>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     CONTENTS
+     ============================================================ -->
+<section class="page soft" data-screen-label="Contents">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">— Contents</div>
+        <h2 class="sec-title">What's inside</h2>
+      </div>
+      <div class="sec-meta">11 sections</div>
+    </div>
+    <div class="toc">
+      <a class="toc-item" href="#voice"><span class="n">01</span><span class="t">Brand &amp; voice</span><span class="meta">What we say · how we say it</span></a>
+      <a class="toc-item" href="#mark"><span class="n">02</span><span class="t">The mark</span><span class="meta">Primary logo · construction</span></a>
+      <a class="toc-item" href="#glyph"><span class="n">03</span><span class="t">Companion glyph</span><span class="meta">For small surfaces</span></a>
+      <a class="toc-item" href="#wordmark"><span class="n">04</span><span class="t">Wordmark &amp; lockups</span><span class="meta">Standalone &amp; combined</span></a>
+      <a class="toc-item" href="#color"><span class="n">05</span><span class="t">Color</span><span class="meta">Palette · usage · tokens</span></a>
+      <a class="toc-item" href="#type"><span class="n">06</span><span class="t">Typography</span><span class="meta">Space Grotesk · JetBrains Mono</span></a>
+      <a class="toc-item" href="#icons"><span class="n">07</span><span class="t">Iconography</span><span class="meta">Line system · 24px grid</span></a>
+      <a class="toc-item" href="#components"><span class="n">08</span><span class="t">UI components</span><span class="meta">Buttons · inputs · badges · cards</span></a>
+      <a class="toc-item" href="#gui"><span class="n">09</span><span class="t">Application UI</span><span class="meta">The Workinabox console</span></a>
+      <a class="toc-item" href="#web"><span class="n">10</span><span class="t">Website</span><span class="meta">workinabox.ai landing</span></a>
+      <a class="toc-item" href="#tokens"><span class="n">11</span><span class="t">Tokens</span><span class="meta">For handoff</span></a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     01 — VOICE
+     ============================================================ -->
+<section class="page" id="voice" data-screen-label="01 — Brand & voice">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">01 — Brand &amp; voice</div>
+        <h2 class="sec-title">An agentic system,<br/>shipped as software <em style="font-style:normal;color:var(--orange)">or</em> hardware.</h2>
+      </div>
+      <div class="sec-meta">Positioning</div>
+    </div>
+
+    <p class="voice-headline">
+      Workinabox is a hierarchy of agents that perform vertical work — software, marketing, sales, operations. Humans write the <em>spec</em>. The system executes, reports, and asks when it's blocked.
+    </p>
+
+    <div class="voice-grid">
+      <div class="voice-card">
+        <span class="tag">Voice — 01</span>
+        <h4>Honest, not slick</h4>
+        <p>We don't promise magic. We surface tradeoffs, name what's unclear, and stop when the spec is incomplete. Marketing copy and product copy share the same rules.</p>
+      </div>
+      <div class="voice-card">
+        <span class="tag">Voice — 02</span>
+        <h4>Engineering-credible</h4>
+        <p>Built on Rust, governed by DDD, instrumented end-to-end. The identity reflects that: precise spacing, monospace labels, restrained ornament. Nothing is decorative.</p>
+      </div>
+      <div class="voice-card">
+        <span class="tag">Voice — 03</span>
+        <h4>Industrial, not sci-fi</h4>
+        <p>Think honest tools, shipping crates, well-made machinery. Avoid silicon-valley pastels, glowing brains, glassy gradients, and the rest of the AI-slop vocabulary.</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; border-top: 1px solid var(--rule); padding-top: 56px;">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 18px;">We say</div>
+        <ul style="font-family: var(--font-display); font-size: 22px; line-height: 1.5; list-style: none; padding: 0; margin: 0; color: var(--ink);">
+          <li style="padding: 6px 0;">Write the spec.</li>
+          <li style="padding: 6px 0;">The work runs in a box.</li>
+          <li style="padding: 6px 0;">Agents, hierarchies, tasks.</li>
+          <li style="padding: 6px 0;">Ships as software, or hardware.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom: 18px; color: var(--crit);">We don't say</div>
+        <ul style="font-family: var(--font-display); font-size: 22px; line-height: 1.5; list-style: none; padding: 0; margin: 0; color: var(--ink-mute); text-decoration: line-through; text-decoration-color: var(--rule);">
+          <li style="padding: 6px 0;">AI-powered everything.</li>
+          <li style="padding: 6px 0;">Revolutionary. Disruptive.</li>
+          <li style="padding: 6px 0;">Replaces your team.</li>
+          <li style="padding: 6px 0;">The future of work.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     02 — MARK
+     ============================================================ -->
+<section class="page soft" id="mark" data-screen-label="02 — The mark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">02 — The mark</div>
+        <h2 class="sec-title">The mark</h2>
+      </div>
+      <div class="sec-meta">Primary · existing · preserved</div>
+    </div>
+
+    <div class="grid col-2" style="gap: 24px; margin-bottom: 48px;">
+      <div class="mark-hero">
+        <span class="corner">Mark · on paper</span>
+        <span class="corner r">RGB · #F4EFE6</span>
+        <span class="logo-slot on-paper" data-logo-slot data-sw="3.5"></span>
+      </div>
+      <div class="mark-hero dark">
+        <span class="corner">Mark · on ink</span>
+        <span class="corner r">RGB · #1A1714</span>
+        <span class="logo-slot on-ink" data-logo-slot data-sw="3.5"></span>
+      </div>
+    </div>
+
+    <div class="mark-rule">
+      <div class="mark-rule-card">
+        <h5>Concept</h5>
+        <p>An isometric box (the system). A gear (the work). A brain (the agent inside). The orange "a" in the wordmark ties the mark to the name — the literal box.</p>
+        <div class="demo">
+          <div style="display: flex; gap: 32px; align-items: center; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-mute);">
+            <div style="text-align:center;">
+              <div style="width: 56px; height: 56px; border: 1.5px solid var(--ink); margin-bottom: 8px; transform: rotate(0deg);"></div>
+              <span>Box</span>
+            </div>
+            <div style="font-size: 18px; color: var(--ink-mute);">+</div>
+            <div style="text-align:center;">
+              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" stroke="var(--ink)" stroke-width="2" style="margin-bottom: 8px;">
+                <circle cx="28" cy="28" r="10"/>
+                <circle cx="28" cy="28" r="3"/>
+                <g stroke-linecap="round">
+                  <line x1="28" y1="10" x2="28" y2="16"/>
+                  <line x1="28" y1="40" x2="28" y2="46"/>
+                  <line x1="10" y1="28" x2="16" y2="28"/>
+                  <line x1="40" y1="28" x2="46" y2="28"/>
+                  <line x1="15.5" y1="15.5" x2="19" y2="19"/>
+                  <line x1="37" y1="37" x2="40.5" y2="40.5"/>
+                  <line x1="15.5" y1="40.5" x2="19" y2="37"/>
+                  <line x1="37" y1="19" x2="40.5" y2="15.5"/>
+                </g>
+              </svg>
+              <span>Gear</span>
+            </div>
+            <div style="font-size: 18px; color: var(--ink-mute);">+</div>
+            <div style="text-align:center;">
+              <div style="width: 36px; height: 36px; background: var(--orange); border-radius: 50% 50% 45% 45% / 60% 60% 40% 40%; margin: 10px auto 8px;"></div>
+              <span>Brain</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mark-rule-card">
+        <h5>Clear space &amp; minimum size</h5>
+        <p>Reserve clear space equal to the height of the lowercase "o" in the wordmark on all sides. Minimum size: 32px digital, 14mm print, for the lockup with wordmark.</p>
+        <div class="demo">
+          <div style="position: relative; padding: 32px; border: 1px dashed var(--orange); border-radius: 4px;">
+            <span style="position: absolute; top: 8px; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: 10px; color: var(--orange-deep);">1 × o</span>
+            <span style="position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); font-family: var(--font-mono); font-size: 10px; color: var(--orange-deep);">1 × o</span>
+            <span style="position: absolute; left: 8px; top: 50%; transform: translateY(-50%) rotate(-90deg); font-family: var(--font-mono); font-size: 10px; color: var(--orange-deep);">1 × o</span>
+            <span style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%) rotate(90deg); font-family: var(--font-mono); font-size: 10px; color: var(--orange-deep);">1 × o</span>
+            <span class="logo-slot on-paper" data-logo-slot data-sw="5" style="width: 140px;"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     03 — COMPANION GLYPH
+     ============================================================ -->
+<section class="page" id="glyph" data-screen-label="03 — Companion glyph">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">03 — Small sizes</div>
+        <h2 class="sec-title">A simpler<br/>mark for small things.</h2>
+      </div>
+      <div class="sec-meta">Favicon · app icon · collapsed nav</div>
+    </div>
+
+    <div class="glyph-grid">
+      <div class="glyph-display">
+        <span class="logo-slot on-paper" data-logo-slot data-sw="2.5" style="width: 280px;"></span>
+      </div>
+      <div class="glyph-notes">
+        <div class="eyebrow" style="margin-bottom: 14px;">— Small-size behaviour</div>
+        <h4>The mark, where it gets tiny.</h4>
+        <p>This is where a logo earns its keep. The simpler the mark, the lower it survives — favicon, app icon, collapsed nav, a notification badge. Switch the <strong>Logo mark</strong> tweak and watch the 16&nbsp;px sample: detail that reads at 280&nbsp;px turns to mud at 16. Never animate, never tilt.</p>
+
+        <div class="glyph-sizes">
+          <div>
+            <span class="logo-slot on-paper" data-logo-slot data-sw="4" style="width: 80px;"></span>
+            <label>80 px</label>
+          </div>
+          <div>
+            <span class="logo-slot on-paper" data-logo-slot data-sw="6" style="width: 48px;"></span>
+            <label>48 px</label>
+          </div>
+          <div>
+            <span class="logo-slot on-paper" data-logo-slot data-sw="9" style="width: 32px;"></span>
+            <label>32 px · favicon</label>
+          </div>
+          <div>
+            <span class="logo-slot on-paper" data-logo-slot data-sw="18" style="width: 16px;"></span>
+            <label>16 px · min</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     04 — WORDMARK & LOCKUPS
+     ============================================================ -->
+<section class="page soft" id="wordmark" data-screen-label="04 — Wordmark">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">04 — Wordmark &amp; lockups</div>
+        <h2 class="sec-title">Wordmark</h2>
+      </div>
+      <div class="sec-meta">Quicksand SemiBold · orange "a"</div>
+    </div>
+
+    <div class="wordmark-big">
+      Workin<span class="a">a</span>box
+    </div>
+
+    <div style="margin-top: 80px;">
+      <div class="eyebrow" style="margin-bottom: 18px;">— Lockups</div>
+      <div class="wordmark-row">
+        <div class="cell">
+          <span class="caption" style="position: absolute; top: 16px; left: 20px;">Horizontal</span>
+          <div class="lockup">
+            <span class="lmark logo-slot on-paper" data-logo-slot data-sw="9"></span>
+            <div class="lwm">Workin<span class="a">a</span>box</div>
+          </div>
+        </div>
+        <div class="cell">
+          <span class="caption" style="position: absolute; top: 16px; left: 20px;">Stacked</span>
+          <div class="lockup stacked">
+            <span class="lmark logo-slot on-paper" data-logo-slot data-sw="7" style="width: 76px; height: 76px;"></span>
+            <div class="lwm" style="font-size: 32px;">Workin<span class="a">a</span>box</div>
+          </div>
+        </div>
+        <div class="cell dark">
+          <span class="caption" style="position: absolute; top: 16px; left: 20px; color: oklch(0.65 0.01 60);">Horizontal · on ink</span>
+          <div class="lockup">
+            <span class="lmark logo-slot on-ink" data-logo-slot data-sw="9"></span>
+            <div class="lwm" style="color: var(--paper);">Workin<span class="a">a</span>box</div>
+          </div>
+        </div>
+        <div class="cell">
+          <span class="caption" style="position: absolute; top: 16px; left: 20px;">Mono · single-line</span>
+          <div style="font-family: var(--font-mono); font-size: 22px; letter-spacing: -0.02em; color: var(--ink);">
+            workinabox<span style="color: var(--ink-mute);">@</span><span style="color: var(--orange-deep);">main</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     05 — COLOR
+     ============================================================ -->
+<section class="page" id="color" data-screen-label="05 — Color">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">05 — Color</div>
+        <h2 class="sec-title">Color</h2>
+      </div>
+      <div class="sec-meta">3 primaries · 2 supporting · 4 semantic</div>
+    </div>
+
+    <div class="color-cluster">
+      <h4>Primary</h4>
+      <div class="color-grid">
+        <div class="swatch">
+          <div class="chip" style="background: oklch(0.692 0.181 49); color: white;">
+            <span>WORKINABOX ORANGE</span>
+            <span>01</span>
+          </div>
+          <div class="meta">
+            <span class="name">Orange</span>
+            <span class="hex">oklch(0.692 0.181 49) · #E76F2C</span>
+            <span class="usage">The single brand signal. Highlights, CTAs, key states. Used sparingly — never as background for body text.</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background: oklch(0.21 0.012 60); color: var(--paper);">
+            <span>INK</span>
+            <span>02</span>
+          </div>
+          <div class="meta">
+            <span class="name">Ink</span>
+            <span class="hex">oklch(0.21 0.012 60) · #2A2622</span>
+            <span class="usage">Primary text, primary mark fill, dark surfaces. Warm near-black — never pure #000.</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background: oklch(0.965 0.012 80); color: var(--ink); border-bottom: 1px solid var(--rule);">
+            <span>PAPER</span>
+            <span>03</span>
+          </div>
+          <div class="meta">
+            <span class="name">Paper</span>
+            <span class="hex">oklch(0.965 0.012 80) · #F4EFE6</span>
+            <span class="usage">Primary surface for marketing &amp; long-form content. Warm cream — never pure #FFF.</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background: oklch(0.585 0.173 42); color: white;">
+            <span>ORANGE DEEP</span>
+            <span>04</span>
+          </div>
+          <div class="meta">
+            <span class="name">Orange Deep</span>
+            <span class="hex">oklch(0.585 0.173 42) · #C25827</span>
+            <span class="usage">Hover &amp; pressed states. Borders on filled orange. Print, where orange must sit darker.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="color-cluster">
+      <h4>Supporting</h4>
+      <div class="color-grid">
+        <div class="swatch">
+          <div class="chip" style="background: oklch(0.36 0.012 60); color: var(--paper);">
+            <span>INK SOFT</span>
+            <span>05</span>
+          </div>
+          <div class="meta">
+            <span class="name">Ink Soft</span>
+            <span class="hex">oklch(0.36 0.012 60) · #564F49</span>
+            <span class="usage">Secondary text. Body copy on paper that doesn't need full emphasis.</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background: oklch(0.55 0.010 60); color: var(--paper);">
+            <span>INK MUTE</span>
+            <span>06</span>
+          </div>
+          <div class="meta">
+            <span class="name">Ink Mute</span>
+            <span class="hex">oklch(0.55 0.010 60) · #877F77</span>
+            <span class="usage">Captions, labels, mono UI text, helpers. The "frame" of the interface.</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background: oklch(0.935 0.014 80); color: var(--ink); border-bottom: 1px solid var(--rule);">
+            <span>PAPER DEEP</span>
+            <span>07</span>
+          </div>
+          <div class="meta">
+            <span class="name">Paper Deep</span>
+            <span class="hex">oklch(0.935 0.014 80) · #ECE5D8</span>
+            <span class="usage">Sidebars, soft section backgrounds, panel chrome.</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background: oklch(0.50 0.080 240); color: white;">
+            <span>SCHEMATIC</span>
+            <span>08</span>
+          </div>
+          <div class="meta">
+            <span class="name">Schematic Blue</span>
+            <span class="hex">oklch(0.50 0.080 240) · #3F6589</span>
+            <span class="usage">Blueprint accents, link color, "assigned" state, diagrammatic overlays. Counter-tone to orange.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="color-cluster">
+      <h4>Semantic</h4>
+      <div class="color-grid">
+        <div class="swatch">
+          <div class="chip" style="background: oklch(0.58 0.110 150); color: white;"><span>OK</span><span>09</span></div>
+          <div class="meta">
+            <span class="name">Success</span>
+            <span class="hex">oklch(0.58 0.110 150) · #4A8E5E</span>
+            <span class="usage">Task completed, gate passed, health green.</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background: oklch(0.74 0.130 80); color: var(--ink);"><span>WARN</span><span>10</span></div>
+          <div class="meta">
+            <span class="name">Warning</span>
+            <span class="hex">oklch(0.74 0.130 80) · #D1A24A</span>
+            <span class="usage">Approaching budget, soft blockers, awaiting human.</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background: oklch(0.58 0.180 25); color: white;"><span>CRIT</span><span>11</span></div>
+          <div class="meta">
+            <span class="name">Critical</span>
+            <span class="hex">oklch(0.58 0.180 25) · #B83E2A</span>
+            <span class="usage">Failed turn, security-gate rejection, destructive action.</span>
+          </div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background: oklch(0.55 0.080 240); color: white;"><span>INFO</span><span>12</span></div>
+          <div class="meta">
+            <span class="name">Info</span>
+            <span class="hex">oklch(0.55 0.080 240) · #4972A0</span>
+            <span class="usage">Neutral status, "assigned", trace context, structured notices.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 56px; padding: 28px 32px; background: var(--paper-deep); border-radius: var(--r-lg); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 36px;">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 10px;">— Ratio · marketing</div>
+        <div style="display: flex; height: 12px; border-radius: 999px; overflow: hidden;">
+          <div style="background: var(--paper); width: 60%; border: 1px solid var(--rule); border-right: none;"></div>
+          <div style="background: var(--ink); width: 30%;"></div>
+          <div style="background: var(--orange); width: 10%;"></div>
+        </div>
+        <p style="font-size: 13px; color: var(--ink-soft); margin: 12px 0 0;">60 / 30 / 10 — paper, ink, orange. Orange is the smallest share, always.</p>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom: 10px;">— Ratio · product UI</div>
+        <div style="display: flex; height: 12px; border-radius: 999px; overflow: hidden;">
+          <div style="background: var(--paper); width: 55%; border: 1px solid var(--rule); border-right: none;"></div>
+          <div style="background: var(--paper-deep); width: 25%; border: 1px solid var(--rule); border-left: none; border-right: none;"></div>
+          <div style="background: var(--ink); width: 15%;"></div>
+          <div style="background: var(--orange); width: 5%;"></div>
+        </div>
+        <p style="font-size: 13px; color: var(--ink-soft); margin: 12px 0 0;">Paper, deep, ink, orange — orange reserved for selection &amp; key actions.</p>
+      </div>
+      <div>
+        <div class="eyebrow" style="margin-bottom: 10px;">— Accessibility</div>
+        <p style="font-size: 13px; color: var(--ink-soft); margin: 0;">Ink on Paper: 12.4:1 ✓ AAA. Orange on Paper: 4.7:1 ✓ AA Large. Orange on Ink: 4.2:1 ✓ AA Large. Use ink-soft for body, ink for headings.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     06 — TYPOGRAPHY
+     ============================================================ -->
+<section class="page soft" id="type" data-screen-label="06 — Typography">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">06 — Typography</div>
+        <h2 class="sec-title">Type</h2>
+      </div>
+      <div class="sec-meta">2 families · structured scale</div>
+    </div>
+
+    <div class="font-spec">
+      <div class="specimen">
+        <div class="name">Display &amp; body · Space Grotesk</div>
+        <div class="glyphs">Aa Gg 01</div>
+        <div class="desc">A precise, slightly mechanical sans built on Florian Karsten's Space Mono. Pairs naturally with engineering tooling. Used for every headline, paragraph, label, and button in the system.</div>
+      </div>
+      <div class="specimen">
+        <div class="name">Mono · JetBrains Mono</div>
+        <div class="glyphs" style="font-family: var(--font-mono);">Aa Gg 01</div>
+        <div class="desc">Used for: IDs, timestamps, code, eyebrows, captions, and all places where the interface needs to look like a tool. Never used for body copy.</div>
+      </div>
+    </div>
+
+    <div class="eyebrow" style="margin: 32px 0 8px;">— Display scale</div>
+    <div>
+      <div class="type-spec">
+        <div class="label">Display 01<span class="px">88px · 500 · -0.035em</span></div>
+        <div class="sample" style="font-size: 88px; font-weight: 500; letter-spacing: -0.035em; line-height: 0.95;">Companies, in a box.</div>
+      </div>
+      <div class="type-spec">
+        <div class="label">Display 02<span class="px">56px · 500 · -0.025em</span></div>
+        <div class="sample" style="font-size: 56px; font-weight: 500; letter-spacing: -0.025em; line-height: 1.02;">Write the spec. We do the work.</div>
+      </div>
+      <div class="type-spec">
+        <div class="label">Heading 01<span class="px">32px · 500 · -0.015em</span></div>
+        <div class="sample" style="font-size: 32px; font-weight: 500; letter-spacing: -0.015em; line-height: 1.15;">An agentic system, shipped.</div>
+      </div>
+      <div class="type-spec">
+        <div class="label">Heading 02<span class="px">22px · 500 · -0.01em</span></div>
+        <div class="sample" style="font-size: 22px; font-weight: 500; letter-spacing: -0.01em;">Task progressed: Implement migration test</div>
+      </div>
+      <div class="type-spec">
+        <div class="label">Body<span class="px">15px · 400 · 0em</span></div>
+        <div class="sample" style="font-size: 15px; font-weight: 400; line-height: 1.55; color: var(--ink-soft); max-width: 56ch;">Workinabox is an agentic system for running parts of, or whole, companies. It is a collection of agents that work together to achieve the goals of the organization — performing software development, marketing, sales, operations, and the work in between.</div>
+      </div>
+      <div class="type-spec">
+        <div class="label">Caption<span class="px">12px · mono · 0.06em</span></div>
+        <div class="sample" style="font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-mute);">WIAB-CORE / 0.4.1 · BUILT 2026-05-28 14:22 UTC</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     07 — ICONOGRAPHY
+     ============================================================ -->
+<section class="page" id="icons" data-screen-label="07 — Iconography">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">07 — Iconography</div>
+        <h2 class="sec-title">Icons</h2>
+      </div>
+      <div class="sec-meta">24px grid · 1.5px stroke · rounded joins</div>
+    </div>
+
+    <div class="icon-grid">
+      <!-- Box -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><path d="M12 3 L21 7.5 L12 12 L3 7.5 Z M3 7.5 L3 16.5 L12 21 L12 12 M21 7.5 L21 16.5 L12 21"/></svg>
+        <span class="label">Box</span>
+      </div>
+      <!-- Spec -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><path d="M6 3 L15 3 L19 7 L19 21 L6 21 Z M15 3 L15 7 L19 7 M9 12 L16 12 M9 16 L16 16 M9 8 L12 8"/></svg>
+        <span class="label">Spec</span>
+      </div>
+      <!-- Agent -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="3.5"/><path d="M4.5 20 C 5 15.5 8.5 13.5 12 13.5 C 15.5 13.5 19 15.5 19.5 20"/></svg>
+        <span class="label">Agent</span>
+      </div>
+      <!-- Task -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="1.5"/><path d="M7 9.5 L10 12 L14.5 7.5 M7 16 L13 16"/></svg>
+        <span class="label">Task</span>
+      </div>
+      <!-- Board -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="5.5" height="16" rx="1"/><rect x="9.25" y="4" width="5.5" height="11" rx="1"/><rect x="15.5" y="4" width="5.5" height="7" rx="1"/></svg>
+        <span class="label">Board</span>
+      </div>
+      <!-- Hierarchy -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="1.5"/><circle cx="5.5" cy="14" r="1.5"/><circle cx="12" cy="14" r="1.5"/><circle cx="18.5" cy="14" r="1.5"/><path d="M12 6 L12 9 M12 9 L5.5 12.5 M12 9 L12 12.5 M12 9 L18.5 12.5"/><path d="M5.5 15.5 L5.5 18.5 M12 15.5 L12 18.5 M18.5 15.5 L18.5 18.5"/></svg>
+        <span class="label">Hierarchy</span>
+      </div>
+      <!-- Loop -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><path d="M4 12 a8 8 0 1 1 4 7" /><path d="M8 19 L4 19 L4 15"/></svg>
+        <span class="label">Turn</span>
+      </div>
+      <!-- Gear -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 4 L12 6 M12 18 L12 20 M4 12 L6 12 M18 12 L20 12 M6.5 6.5 L8 8 M16 16 L17.5 17.5 M6.5 17.5 L8 16 M16 8 L17.5 6.5"/></svg>
+        <span class="label">Work</span>
+      </div>
+
+      <!-- Mic -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M6 11 a6 6 0 0 0 12 0 M12 17 L12 21 M9 21 L15 21"/></svg>
+        <span class="label">Voice</span>
+      </div>
+      <!-- Repo -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><path d="M5 4 L5 18 a2 2 0 0 0 2 2 L19 20 L19 4 L7 4 a2 2 0 0 0 -2 2 a2 2 0 0 0 2 2 L19 8"/></svg>
+        <span class="label">Repo</span>
+      </div>
+      <!-- Pipeline -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><rect x="3" y="9" width="5" height="6" rx="1"/><rect x="9.5" y="9" width="5" height="6" rx="1"/><rect x="16" y="9" width="5" height="6" rx="1"/><path d="M8 12 L9.5 12 M14.5 12 L16 12"/></svg>
+        <span class="label">Pipeline</span>
+      </div>
+      <!-- Gate / shield -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><path d="M12 3 L20 6 L20 12 C 20 16 16.5 19.5 12 21 C 7.5 19.5 4 16 4 12 L 4 6 Z M9 12 L11 14 L15 10"/></svg>
+        <span class="label">Gate</span>
+      </div>
+      <!-- Trace / steps -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="1.5"/><circle cx="6" cy="18" r="1.5"/><path d="M6 7.5 L6 16.5"/><path d="M9 6 L20 6 M9 12 L17 12 M9 18 L14 18"/></svg>
+        <span class="label">Trace</span>
+      </div>
+      <!-- Spec doc + check -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12 L11 15 L16 9"/></svg>
+        <span class="label">Done</span>
+      </div>
+      <!-- Block -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M5.5 5.5 L18.5 18.5"/></svg>
+        <span class="label">Blocked</span>
+      </div>
+      <!-- Box ship -->
+      <div class="icon-cell">
+        <svg viewBox="0 0 24 24"><path d="M3 8 L12 4 L21 8 L21 17 L12 21 L3 17 Z"/><path d="M3 8 L12 12 L21 8 M12 12 L12 21"/></svg>
+        <span class="label">Ship</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     08 — COMPONENTS
+     ============================================================ -->
+<section class="page soft" id="components" data-screen-label="08 — UI components">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">08 — UI components</div>
+        <h2 class="sec-title">Components</h2>
+      </div>
+      <div class="sec-meta">The atoms of the GUI</div>
+    </div>
+
+    <div class="comp-group">
+      <h4>— Buttons</h4>
+      <div class="comp-stage">
+        <button class="btn primary">Run agent</button>
+        <button class="btn secondary">Save spec</button>
+        <button class="btn ghost">Cancel</button>
+        <button class="btn primary small">Assign</button>
+        <button class="btn ghost small">···</button>
+      </div>
+    </div>
+
+    <div class="comp-group">
+      <h4>— Inputs</h4>
+      <div class="comp-stage">
+        <input class="input" placeholder="Search tasks, agents, specs…" />
+        <input class="input" value="implement-postgres-persistence" readonly style="font-family: var(--font-mono); color: var(--ink-soft);" />
+        <div style="display: flex; gap: 0;">
+          <input class="input" placeholder="Task title" style="border-top-right-radius: 0; border-bottom-right-radius: 0; width: 240px;" />
+          <button class="btn primary" style="border-top-left-radius: 0; border-bottom-left-radius: 0;">Create</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="comp-group">
+      <h4>— Status badges</h4>
+      <div class="comp-stage">
+        <span class="badge created">Created</span>
+        <span class="badge assigned">Assigned</span>
+        <span class="badge progress">In progress</span>
+        <span class="badge blocked">Blocked</span>
+        <span class="badge completed">Completed</span>
+        <span class="badge failed">Failed</span>
+      </div>
+    </div>
+
+    <div class="comp-group">
+      <h4>— Task card</h4>
+      <div class="comp-stage" style="background: var(--paper); border: 1px solid var(--rule);">
+        <div class="task-card">
+          <span class="tid">TASK-0114</span>
+          <span class="title">Migrate repository layer to Postgres behind existing traits</span>
+          <span class="badge progress" style="align-self: flex-start;">In progress</span>
+          <div class="foot">
+            <span class="agent"><span class="dot"></span>agent · backend-lead</span>
+            <span>step 7 / ~12</span>
+          </div>
+        </div>
+        <div class="task-card">
+          <span class="tid">TASK-0118</span>
+          <span class="title">Draft IaC for staging environment</span>
+          <span class="badge blocked" style="align-self: flex-start;">Blocked</span>
+          <div class="foot">
+            <span class="agent"><span class="dot" style="background: var(--crit);"></span>awaiting human approval</span>
+            <span>—</span>
+          </div>
+        </div>
+        <div class="task-card">
+          <span class="tid">TASK-0107</span>
+          <span class="title">CI: cargo fmt + clippy on every PR</span>
+          <span class="badge completed" style="align-self: flex-start;">Completed</span>
+          <div class="foot">
+            <span class="agent"><span class="dot" style="background: var(--ok);"></span>agent · ops-1</span>
+            <span>4 steps · 02:14</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     09 — APPLICATION UI (Workinabox console)
+     ============================================================ -->
+<section class="page" id="gui" data-screen-label="09 — Application UI">
+  <div class="wrap wide">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">09 — Application UI</div>
+        <h2 class="sec-title">The console</h2>
+      </div>
+      <div class="sec-meta">8 screens · one per menu item</div>
+    </div>
+
+<div id="console-screens"></div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     10 — WEBSITE
+     ============================================================ -->
+<section class="page soft" id="web" data-screen-label="10 — Website">
+  <div class="wrap wide">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">10 — Website</div>
+        <h2 class="sec-title">workinabox.ai</h2>
+      </div>
+      <div class="sec-meta">Hero · positioning</div>
+    </div>
+
+    <div class="web-frame">
+      <div class="web-nav">
+        <div class="nav-left">
+          <div class="brand-lockup">
+            <span class="logo-slot on-ink" data-logo-slot data-sw="13" style="width: 26px;"></span>
+            <div class="lwm">Workin<span class="a">a</span>box</div>
+          </div>
+          <nav>
+            <a>Product</a>
+            <a>The box</a>
+            <a>Docs</a>
+            <a>Pricing</a>
+            <a>Company</a>
+          </nav>
+        </div>
+        <div style="display: flex; gap: 12px;">
+          <button class="btn ghost small" style="color: var(--paper); border-color: var(--ink-soft);">Sign in</button>
+          <button class="btn primary small">Request access</button>
+        </div>
+      </div>
+
+      <div class="web-hero">
+        <div class="web-hero-bg"></div>
+        <div class="web-hero-inner">
+          <div>
+            <span class="pill"><span class="tag">v0.1</span> Self-hosted preview · May 2026</span>
+            <h1>Companies, in a <em>box.</em></h1>
+            <p class="lede">An agentic system that runs the work — software, ops, marketing, sales. Write the spec. Workinabox executes, reports, and tells you when it's blocked. Ships as software, or as a physical box on your desk.</p>
+            <div class="cta-row">
+              <button class="btn primary">Request access</button>
+              <button class="btn ghost">Read the architecture →</button>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <span class="label">— The box</span>
+            <span class="corner-r">live</span>
+            <span class="logo-slot on-ink" data-logo-slot data-sw="2.2" style="width: 58%; filter: drop-shadow(0 24px 48px rgba(0,0,0,0.4));"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="web-strip">
+        <div>
+          <div class="n">— 01</div>
+          <div class="h">Spec-driven</div>
+          <div class="p">Humans write the spec. Agents execute, report, and ask when blocked. Nothing happens without a spec.</div>
+        </div>
+        <div>
+          <div class="n">— 02</div>
+          <div class="h">Hierarchies of agents</div>
+          <div class="p">Push, pull, delegate, escalate. The system runs verticals — engineering, ops, marketing — under one roof.</div>
+        </div>
+        <div>
+          <div class="n">— 03</div>
+          <div class="h">Three security gates</div>
+          <div class="p">Input, retrieval, execution — every step audited. Destructive actions require approval. Always.</div>
+        </div>
+        <div>
+          <div class="n">— 04</div>
+          <div class="h">Yours, on a box</div>
+          <div class="p">Run it on your hardware, your VMs, your containers — or order it as the literal box. No cloud lock-in.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     11 — TOKENS
+     ============================================================ -->
+<section class="page" id="tokens" data-screen-label="11 — Tokens">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-num">11 — Tokens</div>
+        <h2 class="sec-title">For handoff</h2>
+      </div>
+      <div class="sec-meta">CSS · Rust · Figma-ready</div>
+    </div>
+
+    <div class="tokens-grid">
+      <div class="tokens-block">
+        <h4>Color · CSS custom properties</h4>
+<pre style="margin:0; font: inherit;"><span class="comment">/* — primary — */</span>
+<span class="key">--wiab-orange</span>      : <span class="val">oklch(0.692 0.181 49)</span>;
+<span class="key">--wiab-orange-deep</span> : <span class="val">oklch(0.585 0.173 42)</span>;
+<span class="key">--wiab-ink</span>         : <span class="val">oklch(0.21  0.012 60)</span>;
+<span class="key">--wiab-paper</span>       : <span class="val">oklch(0.965 0.012 80)</span>;
+
+<span class="comment">/* — supporting — */</span>
+<span class="key">--wiab-ink-soft</span>    : <span class="val">oklch(0.36 0.012 60)</span>;
+<span class="key">--wiab-ink-mute</span>    : <span class="val">oklch(0.55 0.010 60)</span>;
+<span class="key">--wiab-paper-deep</span>  : <span class="val">oklch(0.935 0.014 80)</span>;
+<span class="key">--wiab-schematic</span>   : <span class="val">oklch(0.50 0.080 240)</span>;
+
+<span class="comment">/* — semantic — */</span>
+<span class="key">--wiab-ok</span>          : <span class="val">oklch(0.58 0.110 150)</span>;
+<span class="key">--wiab-warn</span>        : <span class="val">oklch(0.74 0.130  80)</span>;
+<span class="key">--wiab-crit</span>        : <span class="val">oklch(0.58 0.180  25)</span>;
+<span class="key">--wiab-info</span>        : <span class="val">oklch(0.55 0.080 240)</span>;</pre>
+      </div>
+
+      <div class="tokens-block">
+        <h4>Type · CSS custom properties</h4>
+<pre style="margin:0; font: inherit;"><span class="comment">/* — families — */</span>
+<span class="key">--wiab-font-display</span> : <span class="val">'Space Grotesk', system-ui, sans-serif</span>;
+<span class="key">--wiab-font-body</span>    : <span class="val">'Space Grotesk', system-ui, sans-serif</span>;
+<span class="key">--wiab-font-mono</span>    : <span class="val">'JetBrains Mono', ui-monospace, monospace</span>;
+<span class="key">--wiab-font-mark</span>    : <span class="val">'Quicksand', sans-serif</span>;
+
+<span class="comment">/* — scale — */</span>
+<span class="key">--wiab-display-01</span>   : <span class="val">88px / 0.95 / -0.035em / 500</span>;
+<span class="key">--wiab-display-02</span>   : <span class="val">56px / 1.02 / -0.025em / 500</span>;
+<span class="key">--wiab-heading-01</span>   : <span class="val">32px / 1.15 / -0.015em / 500</span>;
+<span class="key">--wiab-heading-02</span>   : <span class="val">22px / 1.30 / -0.010em / 500</span>;
+<span class="key">--wiab-body</span>          : <span class="val">15px / 1.55 /  0.000em / 400</span>;
+<span class="key">--wiab-caption</span>       : <span class="val">12px / mono /  0.060em / 500</span>;
+
+<span class="comment">/* — radii / rules — */</span>
+<span class="key">--wiab-radius-sm</span>    : <span class="val">4px</span>;
+<span class="key">--wiab-radius-md</span>    : <span class="val">6px</span>;
+<span class="key">--wiab-radius-lg</span>    : <span class="val">10px</span>;</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<!-- ============================================================
+     TWEAKS PANEL — React mount
+     ============================================================ -->
+<div id="tweaks-root"></div>
+<script src="logos.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script src="console-screens.js"></script>
+<script type="text/babel" src="tweaks-app.jsx"></script>
+
+<footer class="foot">
+  <span>Workinabox — Visual Identity · v0.1</span>
+  <span>Gos &amp; co ApS · 2026</span>
+</footer>
+
+</body>
+</html>
