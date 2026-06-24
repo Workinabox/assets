@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate assets
+        shell: bash
+        run: |
+          fail=0
+
+          # No empty/corrupt-on-commit files.
+          while IFS= read -r -d '' f; do
+            echo "::error file=$f::empty file"
+            fail=1
+          done < <(find . -path ./.git -prune -o -type f -empty -print0)
+
+          # Guard against accidental huge commits (GitHub rejects >100MB).
+          while IFS= read -r -d '' f; do
+            echo "::error file=$f::file larger than 50MB"
+            fail=1
+          done < <(find . -path ./.git -prune -o -type f -size +50M -print0)
+
+          # Raster images must actually be images.
+          while IFS= read -r -d '' f; do
+            mime=$(file -b --mime-type "$f")
+            case "$mime" in
+              image/*) ;;
+              *) echo "::error file=$f::not a valid image ($mime)"; fail=1 ;;
+            esac
+          done < <(find . -path ./.git -prune -o -type f \
+            \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' \
+            -o -iname '*.gif' -o -iname '*.webp' \) -print0)
+
+          # SVGs must contain an <svg> root.
+          while IFS= read -r -d '' f; do
+            grep -qi '<svg' "$f" || { echo "::error file=$f::not a valid SVG"; fail=1; }
+          done < <(find . -path ./.git -prune -o -type f -iname '*.svg' -print0)
+
+          if [ "$fail" -eq 0 ]; then echo "All asset files valid."; fi
+          exit $fail
